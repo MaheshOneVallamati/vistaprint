@@ -24,9 +24,13 @@ public class VistaprintApplication {
 		System.out.println(" Let's inspect the beans provided by spring Boot:");
 		String[] beanNames = ctx.getBeanDefinitionNames();
 		Arrays.sort(beanNames);
+		
 		for(String beanName : beanNames){
 			System.out.println(beanName);
 			}
+		
+		System.out.println(ctx.getStartupDate()); 
+		
 	  }; 
 	}
 }
